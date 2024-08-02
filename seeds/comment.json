@@ -1,0 +1,12 @@
+[
+    {
+        "comment_text": "this is my first comment",
+        "user_id": 1,
+        "post_id": 1
+    },
+    {
+        "comment_text": "this is great",
+        "user_id": 2,
+        "post_id": 2
+    }
+]

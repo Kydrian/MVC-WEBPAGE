@@ -1,0 +1,24 @@
+<p> Dashboard</p>
+
+<p><a href= "/api/posts/new/form">Create New Post</a></p>
+
+
+{{#if logged_in}}
+{{#each posts as |post| }}
+<div class="my-post">
+<p>{{post.title}}</p> <!-- blogpost, title -->
+<p>{{post.content}}</p> <!-- blogpost, content -->
+<h6> Comments:</h6>
+{{#each post.comment as |comment| }}
+<p>{{comment.comment_text}}</p>
+{{/each}}
+<p><a href= "/api/users/blogpost/{{post.id}}">Click here to view</a></p>
+</div>
+
+<br>
+
+{{/each}}
+<p><a href = "/login">Login</a></p>
+{{/if}}
+
+

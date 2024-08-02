@@ -1,0 +1,14 @@
+<p> Homepage</p>
+
+{{#each posts as |post| }}
+<div>
+    <p>{{post.title}}</p> <!-- blogpost, title -->
+    <p>{{post.content}}</p> <!-- blogpost, content -->
+    <p>Posted by: {{post.user.name}}</p> <!-- blogpost, user, name -->
+    <h6>Comments:</h6>
+    {{#each post.comment as |comment| }}
+    <p>{{comment.comment_text}}</p>
+    {{/each}}
+</div>
+<br>
+{{/each}}
